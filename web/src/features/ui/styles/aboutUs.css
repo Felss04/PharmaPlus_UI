@@ -1,0 +1,151 @@
+
+/* Hero Section */
+.hero-about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #EAF7FF;
+    color: #0078D7;
+}
+
+.hero-about h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-about p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    gap: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    color: #0078D7;
+    margin-bottom: 10px;
+}
+
+.about-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+/* Values Section */
+.values {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.values h2 {
+    color: #0078D7;
+    margin-bottom: 20px;
+}
+
+.value-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.value-card {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    width: 200px;
+}
+
+.value-card ion-icon {
+    font-size: 2rem;
+    color: #0078D7;
+    margin-bottom: 10px;
+}
+
+.value-card h3 {
+    margin: 10px 0;
+    color: #0078D7;
+}
+
+.value-card p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 30px;
+    border-top: 2px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    max-width: 100px; /* Tamaño pequeño del logo */
+    height: auto;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    color: #e53935;
+}
+
+.footer-text span:first-child {
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.footer-right p {
+    margin: 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #333;
+}
+
+.footer-right ion-icon {
+    font-size: 1rem;
+    color: #e53935;
+}

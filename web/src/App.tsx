@@ -2,12 +2,14 @@ import { Route, Routes } from 'react-router'
 import { MainLayout } from './layout/main-layout'
 import { Home } from '@/pages/home/home'
 import { Login } from './pages/login/login'
+import { AboutUs } from './pages/aboutUs/about-us'
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />} >
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs/>} />
       </Route>
       <Route path="*" element={<span>404</span>} />
       <Route path="/login" element={<Login />} />

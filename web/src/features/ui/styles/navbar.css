@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   padding: 10px 20px;
   height: 100px;
   color: white;
@@ -12,6 +12,7 @@
 
 .navbar .logo img {
   max-width: 100px; /* Tamaño pequeño del logo */
+  cursor: pointer;
   height: auto;
 }
 

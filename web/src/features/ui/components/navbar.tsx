@@ -9,20 +9,14 @@ import {
 } from "@/components/ui/select"
 
 import { Search, ShoppingCart } from "lucide-react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 export const Navbar = () => {
     const navigate = useNavigate()
     return (
         <nav className="navbar sticky top-0 z-50">
-            <div className="logo"><img src="/assets/images/PharmaPlus-Logo.webp" alt="PharmaPlus Logo" />
+            <div className="logo" onClick={()=>{navigate('/')}}><img src="/assets/images/PharmaPlus-Logo.webp" alt="PharmaPlus Logo" />
             </div>
             <div className="flex max-w-[400px] border-2 border-gray-50 justify-between rounded-md outline-none overflow-hidden">
-                {/* <select>
-                    <option value="all">Categorías</option>
-                    <option value="medicines">Medicinas</option>
-                    <option value="supplements">Suplementos</option>
-                    <option value="equipment">Gastables</option>
-                </select> */}
                 <Select>
                     <SelectTrigger className="w-[130px] bg-gray-100 text-[#222] border-none outline-none focus:ring-0 hover:bg-gray-200
                     rounded-r-none
@@ -41,7 +35,9 @@ export const Navbar = () => {
                 </Button>
             </div>
             <ul className="nav-links">
-                <li><a href="About-us.html">Sobre Nosotros</a></li>
+                <li>
+                    <Link to="/about-us">Sobre Nosotros</Link>
+                </li>
                 <li><a href="categorias.html">Categorías</a></li>
                 <li><a href="Sucursales.html">Sucursales</a></li>
             </ul>
